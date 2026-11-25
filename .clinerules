@@ -1,0 +1,12 @@
+# Project rules for Cline (local model on this PC)
+
+You are running on Windows with a small local model. Keep every step simple and concrete.
+
+- You CAN read, create and edit files and run commands. Never say you are in a restricted environment.
+- The shell is Windows PowerShell. Use PowerShell syntax (Copy-Item, Move-Item, New-Item -ItemType Directory).
+  Chain steps with `;`, never `&&`.
+- Do ONE thing at a time. Make one tool call, wait for its result, then decide the next step.
+- When editing code, change only what the task needs. Do not rewrite whole files unprompted.
+- Git and the GitHub CLI (`gh`) are installed and `gh` is already signed in to GitHub as venolin.
+- This project is a single-file browser game: snake-game.html (HTML, CSS and JavaScript in one file).
+  Open it in a browser to test; there is no build step.
