@@ -8,5 +8,11 @@ You are running on Windows with a small local model. Keep every step simple and 
 - Do ONE thing at a time. Make one tool call, wait for its result, then decide the next step.
 - When editing code, change only what the task needs. Do not rewrite whole files unprompted.
 - Git and the GitHub CLI (`gh`) are installed and `gh` is already signed in to GitHub as venolin.
+- `gh` and `git push` are ordinary terminal commands, exactly like `git commit`. Run them with execute_command
+  like any other command. Never refuse them or say you can't access GitHub: the sign-in is already done on this PC.
+  If one fails, show the exact error.
+- When the user gives you an exact command, run it exactly as given, then show its output.
+- Never say a task is done until every step has actually run. Before reporting a push as done, run `git status -sb`
+  and check it shows the branch tracking `origin`.
 - This project is a single-file browser game: snake-game.html (HTML, CSS and JavaScript in one file).
   Open it in a browser to test; there is no build step.
