@@ -14,5 +14,7 @@ You are running on Windows with a small local model. Keep every step simple and 
 - When the user gives you an exact command, run it exactly as given, then show its output.
 - Never say a task is done until every step has actually run. Before reporting a push as done, run `git status -sb`
   and check it shows the branch tracking `origin`.
-- This project is a single-file browser game: snake-game.html (HTML, CSS and JavaScript in one file).
-  Open it in a browser to test; there is no build step.
+- This project is a browser game split into: index.html (page), css/styles.css (styles), js/game.js (game logic).
+  Open index.html in a browser to test; there is no build step.
+- This folder (C:\Users\venol\source\repos\venolin\snake-game) is the Git repository. Always edit files here.
+  Never create a new project folder or copy the project elsewhere.
